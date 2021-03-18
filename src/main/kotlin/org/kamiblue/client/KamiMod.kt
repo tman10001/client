@@ -21,23 +21,23 @@ import java.io.File
 class KamiMod {
 
     companion object {
-        const val NAME = "KAMI Blue"
-        const val ID = "kamiblue"
-        const val DIRECTORY = "kamiblue/"
+        const val NAME = "DBWare"
+        const val ID = "dbware"
+        const val DIRECTORY = "dbware/"
 
-        const val VERSION = "2.03.xx-dev" // Used for debugging. R.MM.DD-hash format.
-        const val VERSION_SIMPLE = "2.03.xx-dev" // Shown to the user. R.MM.DD[-beta] format.
-        const val VERSION_MAJOR = "2.03.01" // Used for update checking. RR.MM.01 format.
+        const val VERSION = "0.3" // Used for debugging. R.MM.DD-hash format.
+        const val VERSION_SIMPLE = "0.3" // Shown to the user. R.MM.DD[-beta] format.
+        const val VERSION_MAJOR = "0.3" // Used for update checking. RR.MM.01 format.
         const val BUILD_NUMBER = -1 // Do not remove, currently unused but will be used in the future.
 
-        const val APP_ID = "638403216278683661"
+        const val APP_ID = "817929445947211786"
 
         const val DOWNLOADS_API = "https://kamiblue.org/api/v1/downloads.json"
         const val CAPES_JSON = "https://raw.githubusercontent.com/kami-blue/cape-api/capes/capes.json"
-        const val GITHUB_LINK = "https://github.com/kami-blue"
-        const val WEBSITE_LINK = "https://kamiblue.org"
+        const val GITHUB_LINK = "https://github.com/tman10001"
+        const val WEBSITE_LINK = "https://dbware.org"
 
-        const val KAMI_KATAKANA = "カミブル"
+        const val KAMI_KATAKANA = "ᴅʙᴡᴀʀᴇ"
 
         val LOG: Logger = LogManager.getLogger(NAME)
 
