@@ -29,7 +29,7 @@ object Installer : JPanel() {
         println("Running the ${KamiMod.NAME} ${KamiMod.VERSION} Installer")
 
         if (downloadsApi.size < 19) {
-            notify("Error while loading the KAMI Blue Downloads API, couldn't connect to the URL or response is invalid. " +
+            notify("Error while loading the DBWare  Downloads API, couldn't connect to the URL or response is invalid. " +
                 "Either your Firewall / ISP is blocking it or you're not connected to the internet!",
                 "Error!"
             )
@@ -87,8 +87,8 @@ object Installer : JPanel() {
         betaButton.isContentAreaFilled = false
         betaButton.isBorderPainted = true
 
-        stableButton.toolTipText = "This version of KAMI Blue is the latest major release"
-        betaButton.toolTipText = "A beta version of KAMI Blue, with frequent updates and fixes"
+        stableButton.toolTipText = "This version of DBWare is the latest major release"
+        betaButton.toolTipText = "A beta version of DBWare, with frequent updates and fixes"
 
         // Load images and icons
         val backgroundImage = this.javaClass.getResource("/installer/0${rand.nextInt(4)}.jpg")
@@ -194,7 +194,7 @@ object Installer : JPanel() {
         forEach { file -> Files.delete(file.toPath()) }
     }
 
-    private fun notify(message: String, title: String = "KAMI Blue Installer", type: Int = JOptionPane.WARNING_MESSAGE) {
+    private fun notify(message: String, title: String = "DBWare Installer", type: Int = JOptionPane.WARNING_MESSAGE) {
         JOptionPane.showMessageDialog(frame, message, title, type)
     }
 
@@ -207,7 +207,7 @@ object Installer : JPanel() {
 
         Thread {
             dialog[0] = JOptionPane("", JOptionPane.PLAIN_MESSAGE, JOptionPane.OK_CANCEL_OPTION)
-                .createDialog(null, "KAMI Blue - Downloading")
+                .createDialog(null, "DBWare - Downloading")
 
             dialog[0]?.isResizable = false
             dialog[0]?.setSize(300, 0)
