@@ -67,7 +67,7 @@ object Installer : JPanel() {
         }
 
         if (kamiJars.size > 0) {
-            val action = confirm("Attention! It looks like you have installed KAMI Blue before. Do you want to delete these older versions?")
+            val action = confirm("Attention! It looks like you have installed DBWare before. Do you want to delete these older versions?")
             if (action == JOptionPane.YES_OPTION) {
                 kamiJars.deleteFiles()
             }
@@ -136,7 +136,7 @@ object Installer : JPanel() {
             stableButton.isOpaque = false
             betaButton.isOpaque = false
             download(betaUrl)
-            notify("KAMI Blue $betaVersion has been installed", "Installed", JOptionPane.INFORMATION_MESSAGE)
+            notify("DBWare $betaVersion has been installed", "Installed", JOptionPane.INFORMATION_MESSAGE)
             exitProcess(0)
         }
 
@@ -146,7 +146,7 @@ object Installer : JPanel() {
             stableButton.isOpaque = false
             betaButton.isOpaque = false
             download(stableUrl)
-            notify("KAMI Blue $stableVersion has been installed", "Installed", JOptionPane.INFORMATION_MESSAGE)
+            notify("DBWare $stableVersion has been installed", "Installed", JOptionPane.INFORMATION_MESSAGE)
             exitProcess(0)
         }
     }
