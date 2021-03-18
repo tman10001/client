@@ -41,7 +41,7 @@ internal object AutoEZ : Module(
         ONTOP("KAMI BLUE on top! ez $NAME"),
         EZD("You just got ez'd $NAME"),
         EZ_HYPIXEL("$HYPIXEL_MESSAGE $NAME"),
-        NAENAE("You just got naenae'd by kami blue plus, $NAME"),
+        NAENAE("You just got naenae'd by ᴅʙᴡᴀʀᴇplustwo, $NAME"),
         CUSTOM("");
     }
 
